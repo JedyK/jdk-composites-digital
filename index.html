@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JDK Composites & Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Ajout du logo -->
+    <div class="logo-container">
+      <img src="images/Log.png" alt="Logo JDK Composites & Digital" class="logo">
+    </div>
+    <h1>Bienvenue chez JDK Composites & Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#rendezvous">Prendre Rendez-vous</a></li>
+        <li><a href="#devis">Devis gratuit</a></li>
+        <li><a href="SignUp.html">Inscription</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section d'accueil -->
+  <section id="home">
+    <div class="home">
+        <h2>Votre agent de composites et chef de projets pour des solutions digitales</h2>
+        <p>Avec plus de 10 ans d'expérience dans le composites et la maintenance informatique.</p>
+    </div>
+  </section>
+
+  <!-- Section des services -->
+<section id="services">
+    <h2>Nos Services</h2>
+  
+    <!-- Service Composites -->
+    <div class="service">
+      <h3>Composites</h3>
+      <div class="service-item">
+        <img src="images/construction_bateau.webp" alt="Construction de bateaux" class="service-icon">
+        <div class="service-description">
+          <h4>Construction de bateaux de plaisance</h4>
+          <p>J'offre des services spécialisés dans la construction de bateaux de plaisance sur mesure, avec des matériaux de haute qualité.</p>
+        </div>
+      </div>
+      
+      <div class="service-item">
+        <img src="images/reparation.webp" alt="Réparation et finition" class="service-icon">
+        <div class="service-description">
+          <h4>Réparation et finition</h4>
+          <p>Je répare et finis les bateaux avec précision pour assurer leur durabilité et performance sur l'eau.</p>
+        </div>
+      </div>
+      
+      <div class="service-item">
+        <img src="images/preparation.webp" alt="Préparation et structuration" class="service-icon">
+        <div class="service-description">
+          <h4>Préparation et structuration</h4>
+          <p>Je prépare et structure les bateaux pour des performances optimales, en renforçant leur coque et structure.</p>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <img src="images/carénage.webp" alt="Carrénage" class="service-icon">
+        <div class="service-description">
+          <h4>Carrénage</h4>
+          <p>Le carénage régulier permet de maintenir la coque de votre bateau propre et efficace dans l'eau.</p>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <img src="images/enduit.webp" alt="Enduit" class="service-icon">
+        <div class="service-description">
+          <h4>Enduit</h4>
+          <p>Application professionnelle d'enduit pour une finition lisse et protectrice de votre bateau.</p>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <img src="images/entretien_maintenance.webp" alt="Entretien et maintenance" class="service-icon">
+        <div class="service-description">
+          <h4>Entretien et maintenance</h4>
+          <p>Nos services d'entretien garantissent la longévité de vos équipements nautiques grâce à des inspections régulières.</p>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <img src="images/antifooling.webp" alt="Applications de P.O et Antifooling" class="service-icon">
+        <div class="service-description">
+          <h4>Applications de P.O et Antifooling</h4>
+          <p>Application d'antifooling pour protéger la coque de votre bateau des organismes marins.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Service Digitaux -->
+    <div class="service">
+      <h3>Services Digitaux</h3>
+      <div class="service-item">
+        <img src="images/fullstack.webp" alt="Chef de projet full stack" class="service-icon">
+        <div class="service-description">
+          <h4>Chef de projet full stack web digital</h4>
+          <p>Gestion complète de projets web, de la conception au déploiement, avec expertise en développement full stack.</p>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <img src="images/frontend_backend.webp" alt="Front-end et back-end" class="service-icon">
+        <div class="service-description">
+          <h4>Expertise front-end et back-end</h4>
+          <p>Expertise dans le développement front-end et back-end pour des solutions web robustes et performantes.</p>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <img src="images/gestion_projet.webp" alt="Gestion de projet" class="service-icon">
+        <div class="service-description">
+          <h4>Gestion de projet web de A à Z</h4>
+          <p>J'assure la gestion complète de vos projets numériques, du brainstorming à la mise en ligne finale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Section de rendez-vous -->
+  <section id="rendezvous">
+    <h2>Prendre Rendez-vous</h2>
+    <form id="appointmentForm">
+      <label for="date">Sélectionnez une date :</label>
+      <input type="date" id="date" required>
+      
+      <label for="time">Sélectionnez une heure :</label>
+      <input type="time" id="time" required>
+
+      <button type="submit">Confirmer le rendez-vous</button>
+    </form>
+    <p id="confirmationMessage"></p>
+  </section>
+
+    <!-- Section d'avis des clients -->
+    <section id="avis">
+        <h2>Laissez un avis</h2>
+        <form id="reviewForm">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" required>
+    
+          <label for="review">Votre avis :</label>
+          <textarea id="review" rows="4" required></textarea>
+    
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="reviews">
+          <h3>Avis récents :</h3>
+          <ul id="reviewList">
+            <!-- Les avis seront affichés ici -->
+          </ul>
+        </div>
+    </section>
+
+      <section id="devis">
+        <h2>Obtenez votre devis gratuit</h2>
+        <form id="quoteForm">
+          <label for="clientName">Nom :</label>
+          <input type="text" id="clientName" required>
+      
+          <label for="clientEmail">Email :</label>
+          <input type="email" id="clientEmail" required>
+      
+          <label for="projectType">Type de projet :</label>
+          <select id="projectType" required>
+            <option value="composites">Composites (Bateaux)</option>
+            <option value="digital">Digital (Développement Web)</option>
+          </select>
+      
+          <label for="projectDetails">Détails du projet :</label>
+          <textarea id="projectDetails" rows="5" required></textarea>
+      
+          <button type="submit">Obtenir un devis</button>
+        </form>
+        <p id="quoteMessage"></p>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <!-- Informations de contact -->
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Adresse : 17 Rue Pierre Godet, 85450 Vouillé les Marais</p>
+            <p>Email : <a href="mailto:contact@jdk-composites-digital.com">contact@jdk-composites-digital.com</a></p>
+            <p>Téléphone : <a href="tel:+33123456789">+33 7 64 15 07 04</a></p>
+          </div>
+      
+          <!-- Liens de navigation -->
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#rendezvous">Prendre Rendez-vous</a></li>
+              <li><a href="#avis">Avis Clients</a></li>
+              <li><a href="#devis">Devis Gratuit</a></li>
+            </ul>
+          </div>
+      
+          <!-- Réseaux sociaux -->
+          <div class="footer-section">
+            <h3>Suivez-nous</h3>
+            <ul class="social-icons">
+              <li><a href="https://facebook.com/tonprofil" target="_blank">Facebook</a></li>
+              <li><a href="https://instagram.com/tonprofil" target="_blank">Instagram</a></li>
+              <li><a href="https://linkedin.com/tonprofil" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 JDK Composites & Digital - Tous droits réservés</p>
+          <p><a href="mentions-legales.html">Mentions légales</a></p>
+        </div>
+      </footer>
+      
+
+  <script src="script.js"></script>
+</body>
+</html>

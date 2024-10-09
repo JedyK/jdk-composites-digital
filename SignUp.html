@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JDK Composites & Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Ajout du logo -->
+    <div class="logo-container">
+      <img src="images/Log.png" alt="Logo JDK Composites & Digital" class="logo">
+    </div>
+    <h1>Bienvenue chez JDK Composites & Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="auth">
+    <h2>Créer un compte ou se connecter</h2>
+  
+    <!-- Formulaire d'inscription -->
+    <form id="registerForm">
+      <h3>Inscription</h3>
+      <label for="registerUsername">Nom d'utilisateur :</label>
+      <input type="text" id="registerUsername" required>
+  
+      <label for="registerEmail">Email :</label>
+      <input type="email" id="registerEmail" required>
+  
+      <label for="registerPassword">Mot de passe :</label>
+      <input type="password" id="registerPassword" required>
+  
+      <button type="submit">S'inscrire</button>
+    </form>
+  
+    <!-- Formulaire de connexion -->
+    <form id="loginForm">
+      <h3>Connexion</h3>
+      <label for="loginUsername">Nom d'utilisateur :</label>
+      <input type="text" id="loginUsername" required>
+  
+      <label for="loginPassword">Mot de passe :</label>
+      <input type="password" id="loginPassword" required>
+  
+      <button type="submit">Se connecter</button>
+    </form>
+  
+    <p id="authMessage"></p>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <!-- Informations de contact -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Adresse : 17 Rue Pierre Godet, 85450 Vouillé les Marais</p>
+        <p>Email : <a href="mailto:contact@jdk-composites-digital.com">contact@jdk-composites-digital.com</a></p>
+        <p>Téléphone : <a href="tel:+33123456789">+33 7 64 15 07 04</a></p>
+      </div>
+  
+      <!-- Liens de navigation -->
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#rendezvous">Prendre Rendez-vous</a></li>
+          <li><a href="#avis">Avis Clients</a></li>
+          <li><a href="#devis">Devis Gratuit</a></li>
+        </ul>
+      </div>
+  
+      <!-- Réseaux sociaux -->
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <ul class="social-icons">
+          <li><a href="https://facebook.com/tonprofil" target="_blank">Facebook</a></li>
+          <li><a href="https://instagram.com/tonprofil" target="_blank">Instagram</a></li>
+          <li><a href="https://linkedin.com/tonprofil" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 JDK Composites & Digital - Tous droits réservés</p>
+      <p><a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Sauvegarder les informations de l'utilisateur dans le localStorage (pour simulation)
+  localStorage.setItem('username', username);
+  localStorage.setItem('email', email);
+  localStorage.setItem('password', password);
+
+  document.getElementById('signupMessage').textContent = 'Inscription réussie, vous pouvez maintenant vous connecter.';
+});
+
+  </script>
+
+<script src="script.js"></script>
+</body>
+</html>
